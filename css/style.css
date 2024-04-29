@@ -297,7 +297,7 @@ body{
 }
 .box-projet:nth-child(1){
     background-color: rgb(66, 66, 66);
-    background-image: url(/js-vite/imagens/projeto/Connecta.png);
+    background-image: url(/Portifolio/imagens/projeto/Connecta.png);
     background-size: 100%;
     
 }
