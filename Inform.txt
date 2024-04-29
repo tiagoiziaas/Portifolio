@@ -1,0 +1,15 @@
+<!--- Cores que seram principais
+
+Color: #0c151d - Blue-escuro (background) para tema escuro
+Color: #FFFFFF - white
+Color: #FF0B53 - rosa 
+Color: #cecece - Branco (background) para defaut
+Color: #171F26 - Preto Claro
+<!---- FONTS
+
+Font Grande: font-family: "Bebas Neue", sans-serif;
+Font Pequenas:  font-family: "Roboto Slab", serif;
+
+
+
+ 
