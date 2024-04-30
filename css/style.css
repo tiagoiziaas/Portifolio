@@ -313,14 +313,16 @@ body{
     border-radius: 50%;
 }
 .icons-skill h3{
+    font-family: "Bebas Neue", sans-serif;
     font-size: 1.5em;
     margin: 10px 0px;
 }
 .icons-skill p{
+    font-family: "Roboto Slab", serif;
     width: 70%;
     font-size: 1em;
-    margin: 10px auto;
-    text-align: start;
+    margin: 20px auto;
+    text-align: center;
 }
 .box-projet:nth-child(1){
     background-color: rgb(66, 66, 66);
@@ -346,8 +348,8 @@ background-color: #f44150;
     filter: blur(2px);
     transform: translateX(-100px);
     opacity: 0;
-    
 }
+
 .delone{
     filter: blur(0px);
     transform: translateX(0px);
@@ -393,6 +395,29 @@ background-color: #f44150;
         flex-direction: row;
        
     }
+    .del{
+        width: 50%;
+       
+    }
+    .del > p{
+        width: 90%;
+    }
+    .del:nth-child(1){
+        transition-delay: 500ms;
+        }
+        .del:nth-child(2){
+            transition-delay: 300ms;
+        }
+        .del:nth-child(3){
+            transition-delay: 500ms;
+        }
+        .del:nth-child(4){
+            transition-delay: 300ms;
+        }
+        .del:nth-child(5){
+            transition-delay: 500ms;
+        }
+
     .Tagsnames{
        
         margin: auto 10px;
@@ -400,13 +425,14 @@ background-color: #f44150;
     #img-photo{
       margin: 0px 50px;
     }
-    .container-skills{
-        display: none;
+    .container-skills .icons-skill{
+       
         flex-direction: row;
         flex-wrap: wrap;
         width: 80%;
         margin: 0 auto;
     }
+   
     .box-projet{
         width: 70%;
     }
