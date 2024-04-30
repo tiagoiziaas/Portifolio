@@ -41,3 +41,17 @@ btnk.addEventListener('click', function click(){
   skil.style.display = 'flex';
 
 })
+
+const Onbserve = new IntersectionObserver((ob)=>{
+  ob.forEach((element)=>{
+    if(element.isIntersecting){
+      element.target.classList.add('delone');
+    }else{
+      element.target.classList.remove('delone');
+    }
+  });
+});
+const del = document.querySelectorAll('.del');
+del.forEach((element =>{
+  Onbserve.observe(element);
+}))

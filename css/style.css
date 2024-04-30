@@ -256,7 +256,6 @@ body{
     background-color: #cecece;
 }
 .container-projetos{
-    
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -269,13 +268,15 @@ body{
     background-color: var(--color-black);
     margin: 20px auto;
     border-radius: 20px;
+    box-shadow: 1px 2px 8px rgb(102, 102, 102);
 }
+
 .bottom-content{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 20%;
+    height: 30%;
    
 }
 .bottom-content >h3{
@@ -285,26 +286,76 @@ body{
 .container-skills{
     display: none;
     flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: max-content;
-   
-   
+    height:max-content;   
 }
-.box-skills{
-    width: 80%;
-    height: 240px;
-    margin: 0 auto;
-    background-color: var(--color-black);
-    margin: 20px auto;
-    border-radius: 20px;
+.icons-skill{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.container-text-skill{
+    display: flex;
     
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+}
+.icons-skill img{
+    margin: 30px 0px ;
+    padding: 10px;
+   
+    border-radius: 50%;
+}
+.icons-skill h3{
+    font-size: 1.5em;
+    margin: 10px 0px;
+}
+.icons-skill p{
+    width: 70%;
+    font-size: 1em;
+    margin: 10px auto;
+    text-align: start;
 }
 .box-projet:nth-child(1){
     background-color: rgb(66, 66, 66);
     background-image: url(/Portifolio/imagens/projeto/Connecta.png);
     background-size: 100%;
+}
+#html img{
+background-color: #f44150;
+}
+#css img{
+    background-color: #2586e8 ;
+}
+#js img{
+    background-color: #eeea30;
+}
+#node img{
+    background-color: #49f24c;
+}
+#php img{
+    background-color: #e6abff;
+}
+.del{
+    filter: blur(2px);
+    transform: translateX(-100px);
+    opacity: 0;
     
 }
+.delone{
+    filter: blur(0px);
+    transform: translateX(0px);
+    opacity: 1;
+    transition:  all 2s;
+}
+
+
 .box-projet:nth-child(1) button{
     position: relative;
     top: 180px;
@@ -314,13 +365,15 @@ body{
     
     padding: 7px 27px;
 }
-
 .box-projet:nth-child(1) button a{
     text-decoration: none;
     font-family: "Roboto Slab", serif;
     font-size: 0.9rem;
     color: black;
 }
+
+
+
 
 
 
