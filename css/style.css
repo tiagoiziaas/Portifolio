@@ -189,6 +189,7 @@ body{
     font-family: "Roboto Slab", serif;
 }
 .kills span{
+    
     font-weight: 900;
 }
 .input-button{
@@ -258,7 +259,11 @@ body{
     flex-direction: column;
     width: 100%;
     height: max-content;
-   
+}
+.styr{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 .box-projet{
     width: 80%;
