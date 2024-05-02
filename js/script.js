@@ -1,24 +1,25 @@
-const img = document.getElementById('img');
-const mut = document.querySelector('.mut');
-const bord =document.querySelector('.border-color');
+
+
+const bord = document.querySelector('.border-color');
 const body = document.body;
-img.addEventListener('click', function clicar(){
- 
+
+ $('#img').click(function(){
   if(body.classList.toggle('black-color')){
-      
-      img.style.transition ="all .5s";
+      $('#img').css('transition','all .5s');
       img.src = '/Portifolio/imagens/icones/moon.png';
-      img.style.transform = 'translate(0%)';
-      mut.style.border = '2px solid #ffff';
-      mut.style.background = '#0c151d';
-      mut.style.boxShadow = '#ffff 3px 2px 2px';
+      $('#img').css('transform', 'translate(0%)');
+      $('.mut').css('border','2px solid #ffff');
+      $('.mut').css('background-color','black');
+      $('.mut').css('boxShadow', '#ffff 3px 2px 2px');
     }else{
-      img.style.transform = ' translate(142%)';
+      $('#img').css('transform','translate(142%)');
+  
       img.src = '/Portifolio/imagens/icones/sun.png'; 
-      mut.style.border = '2px solid #FF0B53';
-      img.style.transition ="all .5s";
-      mut.style.boxShadow = '#FF0B53 3px 2px 2px';
-      mut.style.background = 'white';
+      $('.mut').css('border','2px solid #FF0B53');
+      $('#img').css('transition','all .5s')
+      $('.mut').css('boxShadow','#FF0B53 3px 2px 2px');
+      $('.mut').css('background','white');
+      
     }
 });
 const btnp = document.querySelector('#proj');
@@ -26,21 +27,18 @@ const btnk = document.querySelector('#skil');
 
 
 
-btnp.addEventListener('click', function clica(){
-  const proj = document.querySelector('.container-projetos');
-  const skil = document.querySelector('.container-skills');
+
+$('#proj').click(function(){
+
+$('.container-projetos').css('display','flex');
+$('.container-skills').css('display','none');
   
-  skil.style.display = 'none';
-  proj.style.display = 'flex';
   
 });
-btnk.addEventListener('click', function click(){
-  const proj = document.querySelector('.container-projetos');
-  const skil = document.querySelector('.container-skills');
-  proj.style.display = 'none';
-  skil.style.display = 'flex';
-
-})
+$('#skil').click(function(){
+$('.container-projetos').css('display','none');
+$('.container-skills').css('display','flex');
+});
 
 const Onbserve = new IntersectionObserver((ob)=>{
   ob.forEach((element)=>{
@@ -55,3 +53,4 @@ const del = document.querySelectorAll('.del');
 del.forEach((element =>{
   Onbserve.observe(element);
 }))
+

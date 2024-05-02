@@ -7,7 +7,7 @@ Color: #cecece - Branco (background) para defaut
 Color: #171F26 - Preto Claro
 <!---- FONTS
 
-Font Grande: font-family: "Bebas Neue", sans-serif;
+Font Grande:    
 Font Pequenas:  font-family: "Roboto Slab", serif;
 
 
