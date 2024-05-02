@@ -325,6 +325,9 @@ body{
     text-align: center;
 }
 .box-projet:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: end;
     background-color: rgb(66, 66, 66);
     background-image: url(/Portifolio/imagens/projeto/Connecta.png);
     background-size: 100%;
@@ -359,12 +362,9 @@ background-color: #f44150;
 
 
 .box-projet:nth-child(1) button{
-    position: relative;
-    top: 180px;
-    left: 100px;
     border: none;
     border-radius: 8px;
-    
+    margin: 30px 0px;
     padding: 7px 27px;
 }
 .box-projet:nth-child(1) button a{
